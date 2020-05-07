@@ -1,6 +1,9 @@
 // For a detailed explanation regarding each configuration property, visit:
 // https://jestjs.io/docs/en/configuration.html
 module.exports = {
+    transform: {
+        '\\.ts$': ['ts-jest']
+    },
     // All imported modules in your tests should be mocked automatically
     // automock: false,
 
@@ -156,9 +159,6 @@ module.exports = {
 
     // Setting this value to "fake" allows the use of fake timers for functions such as "setTimeout"
     // timers: "real",
-
-    // A map from regular expressions to paths to transformers
-    // transform: null,
 
     // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
     // transformIgnorePatterns: [

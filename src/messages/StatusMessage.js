@@ -1,4 +1,5 @@
-const { msgTypes } = require('./messageTypes')
+import { msgTypes } from './messageTypes.ts'
+
 const NetworkMessage = require('./NetworkMessage')
 
 module.exports = class StatusMessage extends NetworkMessage {
